@@ -24,54 +24,145 @@
     <!-- Hero section -->
     <section id="home" class="hero">
       <div class="container hero-inner">
-        <h1>Hello — I’m Kian Maleki</h1>
-        <p class="lead">Welcome to my portfolio. I build data-driven solutions and enjoy turning data into insights.</p>
-        <a href="#cv" class="btn-primary">View my CV</a>
+        <div>
+          <h1>Kian Maleki</h1>
+          <p class="lead">Welcome — I build data-driven solutions and turn data into actionable insights. I enjoy solving problems others find intractable.</p>
+          
+        </div>
+        <div aria-hidden="false" class="hero-photo">
+          <img src="Portfolio_photo.jpg" alt="Portrait of Kian Maleki" />
+        </div>
       </div>
     </section>
 
     <!-- About Me -->
     <section id="about" class="about container">
       <h2>About Me</h2>
-      <p>I’m a data scientist who loves working with real-world data to solve problems. My interests include predictive modeling, exploratory data analysis, and building interpretable machine learning systems. I enjoy collaborating with cross-functional teams and communicating results to stakeholders.</p>
+      <p>Transitioning from theoretical physics to AI engineering, I bring a unique advantage to data science: I treat data with the same rigor as physical laws. I specialize in distinguishing signal from noise in high-dimensional datasets. My background is not only academic but foundational. I focus on principled, reproducible solutions using first-principles thinking, Bayesian statistics, and advanced Monte Carlo simulation.</p>
     </section>
 
     <!-- Skills -->
     <section id="skills" class="skills container">
       <h2>Skills</h2>
-      <p class="section-sub">Data science skills I use regularly:</p>
+      <p class="section-sub">Data science & engineering skills I use regularly:</p>
 
-      <ul class="skill-grid">
-        <li>
-          <strong>Languages</strong>
-          <span>Python • R • SQL</span>
-        </li>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h4>Machine Learning</h4>
+          <div class="skill-tags" role="list">
+            <button type="button" class="skill-tag" data-skill="Scikit-Learn" aria-pressed="false"> 
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" fill="#06b6d4"/></svg>
+              Scikit-Learn
+            </button>
+            <button type="button" class="skill-tag" data-skill="Random Forest" aria-pressed="false">
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="4" width="16" height="16" rx="3" fill="#06b6d4"/></svg>
+              Random Forest
+            </button>
+            <button type="button" class="skill-tag" data-skill="XGBoost" aria-pressed="false">
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12h18" stroke="#06b6d4" stroke-width="2" stroke-linecap="round"/></svg>
+              XGBoost
+            </button>
+            <button type="button" class="skill-tag" data-skill="Supervised Learning" aria-pressed="false">
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polyline points="4,12 10,6 20,16" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Supervised Learning
+            </button>
+            <button type="button" class="skill-tag" data-skill="A/B Testing" aria-pressed="false">
+              <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="8" cy="12" r="3" fill="#06b6d4"/><circle cx="16" cy="12" r="3" fill="#06b6d4"/></svg>
+              A/B Testing
+            </button>
+          </div>
+        </div>
 
-        <li>
-          <strong>Data wrangling</strong>
-          <span>Pandas • NumPy • dplyr</span>
-        </li>
+        <div class="skill-group">
+          <h4>Deep Learning & NLP</h4>
+          <div class="skill-tags" role="list">
+            <button type="button" class="skill-tag" data-skill="TensorFlow" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12h20" stroke="#06b6d4" stroke-width="2" stroke-linecap="round"/></svg>TensorFlow</button>
+            <button type="button" class="skill-tag" data-skill="Keras" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="#06b6d4"/></svg>Keras</button>
+            <button type="button" class="skill-tag" data-skill="PyTorch" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2" fill="#06b6d4"/></svg>PyTorch</button>
+            <button type="button" class="skill-tag" data-skill="Convolutional Neural Networks (CNNs)" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18" stroke="#06b6d4" stroke-width="2" stroke-linecap="round"/></svg>Convolutional Neural Networks (CNNs)</button>
+            <button type="button" class="skill-tag" data-skill="NLP" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16v10H4z" fill="#06b6d4"/></svg>NLP</button>
+          </div>
+        </div>
 
-        <li>
-          <strong>Machine Learning</strong>
-          <span>Scikit-learn • XGBoost • LightGBM</span>
-        </li>
+        <div class="skill-group">
+          <h4>Modeling & Statistics</h4>
+          <div class="skill-tags" role="list">
+            <button type="button" class="skill-tag" data-skill="Monte Carlo Simulations" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#06b6d4"/></svg>Monte Carlo Simulations</button>
+            <button type="button" class="skill-tag" data-skill="Bayesian Statistics" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M2 12h20" stroke="#06b6d4" stroke-width="2"/></svg>Bayesian Statistics</button>
+            <button type="button" class="skill-tag" data-skill="Hypothesis Testing" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" fill="#06b6d4"/></svg>Hypothesis Testing</button>
+          </div>
+        </div>
 
-        <li>
-          <strong>Deep Learning</strong>
-          <span>TensorFlow • Keras • PyTorch</span>
-        </li>
+        <div class="skill-group">
+          <h4>Data & Analysis</h4>
+          <div class="skill-tags" role="list">
+            <button type="button" class="skill-tag" data-skill="Pandas" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M3 3h18v18H3z" fill="#06b6d4"/></svg>Pandas</button>
+            <button type="button" class="skill-tag" data-skill="NumPy" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="#06b6d4"/></svg>NumPy</button>
+            <button type="button" class="skill-tag" data-skill="SciPy" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M2 12h20" stroke="#06b6d4" stroke-width="2"/></svg>SciPy</button>
+            <button type="button" class="skill-tag" data-skill="EDA" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M4 6h16v12H4z" fill="#06b6d4"/></svg>EDA</button>
+            <button type="button" class="skill-tag" data-skill="Jupyter Notebooks" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="#06b6d4"/></svg>Jupyter Notebooks</button>
+          </div>
+        </div>
 
-        <li>
-          <strong>Visualization</strong>
-          <span>Matplotlib • Seaborn • Plotly</span>
-        </li>
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="skill-tags" role="list">
+            <button type="button" class="skill-tag" data-skill="Python" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M3 12h18" stroke="#06b6d4" stroke-width="2"/></svg>Python</button>
+            <button type="button" class="skill-tag" data-skill="C++" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="#06b6d4"/></svg>C++</button>
+            <button type="button" class="skill-tag" data-skill="SQL" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="9" ry="5" fill="#06b6d4"/></svg>SQL</button>
+            <button type="button" class="skill-tag" data-skill="Mathematica" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="#06b6d4"/></svg>Mathematica</button>
+            <button type="button" class="skill-tag" data-skill="Bash" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M4 4h16v16H4z" fill="#06b6d4"/></svg>Bash</button>
+            <button type="button" class="skill-tag" data-skill="LaTeX" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M3 12h18" stroke="#06b6d4" stroke-width="2"/></svg>LaTeX</button>
+          </div>
+        </div>
 
-        <li>
-          <strong>Statistics & Tools</strong>
-          <span>Hypothesis testing • Bayesian methods • Git • Docker</span>
-        </li>
-      </ul>
+        <div class="skill-group">
+          <h4>Visualization & BI</h4>
+          <div class="skill-tags" role="list">
+            <button type="button" class="skill-tag" data-skill="Matplotlib" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="#06b6d4"/></svg>Matplotlib</button>
+            <button type="button" class="skill-tag" data-skill="Seaborn" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="#06b6d4"/></svg>Seaborn</button>
+            <button type="button" class="skill-tag" data-skill="Plotly" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M2 12h20" stroke="#06b6d4" stroke-width="2"/></svg>Plotly</button>
+            <button type="button" class="skill-tag" data-skill="Tableau" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M4 6h16v12H4z" fill="#06b6d4"/></svg>Tableau</button>
+            <button type="button" class="skill-tag" data-skill="Power BI" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" fill="#06b6d4"/></svg>Power BI</button>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Tools & DevOps</h4>
+          <div class="skill-tags" role="list">
+            <button type="button" class="skill-tag" data-skill="Git" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M3 12h18" stroke="#06b6d4" stroke-width="2"/></svg>Git</button>
+            <button type="button" class="skill-tag" data-skill="GitHub" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="#06b6d4"/></svg>GitHub</button>
+            <button type="button" class="skill-tag" data-skill="Docker" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="#06b6d4"/></svg>Docker</button>
+            <button type="button" class="skill-tag" data-skill="AWS (S3/EC2)" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M2 12h20" stroke="#06b6d4" stroke-width="2"/></svg>AWS (S3/EC2)</button>
+            <button type="button" class="skill-tag" data-skill="VS Code" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="#06b6d4"/></svg>VS Code</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Projects -->
+    <section id="projects" class="projects container">
+      <h2>Technical Projects</h2>
+      <p class="section-sub">Selected technical projects. Click a skill tag to filter.</p>
+      <div class="project-list">
+        <article class="project-card" data-skills="Python,Pandas,Matplotlib,Seaborn,SciPy">
+          <h4>Video Game Sales Analysis Project <span class="muted">Nov 2025</span></h4>
+          <p><a href="https://github.com/kianushmaleki/" target="_blank" rel="noopener noreferrer">Repository</a></p>
+          <p><strong>Problem:</strong> Analyze historical video game sales to uncover patterns of success and inform future advertising strategies.</p>
+          <p><strong>Solution:</strong> Conducted comprehensive data analysis on decades of video game sales, including chart and table evaluation. Tested probabilistic hypotheses to identify trends, successful genres, top-performing platforms, and customer behavior patterns.</p>
+          <p><strong>Impact:</strong> Delivered actionable insights into market trends and potential target audiences, supporting optimized advertising campaigns and strategic investment decisions.</p>
+          <p><strong>Tech Used:</strong> Python, pandas, matplotlib, seaborn, scipy</p>
+        </article>
+
+        <article class="project-card" data-skills="Python,Pandas,Matplotlib,Seaborn,Scikit-Learn,TensorFlow,Keras">
+          <h4>Credit Card Fraud Detection - Machine Learning <span class="muted">Nov 2025</span></h4>
+          <p><a href="https://github.com/kianushmaleki/Credit-Card-Fraud-Detection-ML.git" target="_blank" rel="noopener noreferrer">Repository</a></p>
+          <p><strong>Problem:</strong> Develop a machine learning model that can accurately detect fraudulent credit card transactions using historical data.</p>
+          <p><strong>Solution:</strong> Analyzed transaction patterns and trained models to distinguish between normal and fraudulent activity, enabling early flagging of suspicious behavior to reduce financial risk.</p>
+          <p><strong>Impact:</strong> Evaluated precision, recall, and F1-score to address class imbalance and provide reliable performance metrics for deployment considerations.</p>
+          <p><strong>Tech Used:</strong> Python, pandas, matplotlib, seaborn, Scikit-Learn, TensorFlow, Keras</p>
+        </article>
+      </div>
     </section>
 
     <!-- CV -->
@@ -79,8 +170,8 @@
       <div class="cv-head">
         <h2>Kian Maleki</h2>
         <h3>Curriculum Vitae</h3>
-        <p class="cv-contact">KianMaleki@creighton.edu | (737) 600-9803 | <a href="https://www.linkedin.com/in/kian-maleki-96381772" target="_blank">LinkedIn: kian-maleki-96381772</a></p>
-        <p class="cv-note"><em>In preparation of this CV Large Language Models (LLM) are NOT used</em></p>
+        <p class="cv-contact">kianmaleki@creighton.edu | (737) 600-9803 | <a href="https://github.com/kianushmaleki" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/kian-maleki-phd/" target="_blank">LinkedIn: kian-maleki-phd</a></p>
+        <p class="cv-note"><em>This CV was prepared without the use of large language models (LLMs).</em></p>
       </div>
 
       <div class="cv-section">
@@ -118,10 +209,10 @@
           <h4>University of Iowa, Physics Department, Iowa City, IA</h4>
           <div class="muted">Aug 2018 - Aug 2025</div>
           <ul>
-            <li>Analyzed site symmetry and crystal field of erbium oxide using Steven’s Operators</li>
+            <li>Analyzed site symmetry and crystal field of erbium oxide using Stevens operators</li>
             <li>Developed theoretical tools to calculate noncollinear magnon dispersion and applied it to erbium oxide</li>
-            <li>Modeled transport via molecular defect, VOPc using Fowler-Nordheim a.k.a Field Electron Emission</li>
-            <li>Formulated transport in co-tunneling region using Linblanian</li>
+            <li>Modeled transport through a molecular defect (VOPc) using Fowler–Nordheim (field electron emission) theory</li>
+            <li>Formulated transport in the cotunneling regime using Lindblad equations</li>
             <li>Studied transport properties of defect in hexagonal boron nitride</li>
             <li>Worked on Dynamical Projective Connections and Gravity</li>
           </ul>
@@ -130,7 +221,7 @@
           <div class="muted">Aug 2015 - Aug 2018</div>
           <ul>
             <li>Determined Dark Matter Neutralino densities, cross sections, and expected detection rates in both direct and indirect detection experiments using DarkSUSY using both Fortran and Python</li>
-            <li>Designed and developed an N body planetary simulation in Python</li>
+            <li>Designed and developed an N-body planetary simulation in Python</li>
             <li>Developed numerical solution to an Inclination of binary stars via simulation in Python</li>
             <li>Designed and developed a Python-based molecular dynamics code with a GUI for local execution, and parallelized it to execute on HPC resources of the Open Science Grid.</li>
           </ul>
@@ -210,8 +301,9 @@
 
     <!-- Contact / Footer -->
     <footer id="contact" class="site-footer container">
-      <p>Say hello — <a href="mailto:KianMaleki@creighton.edu">KianMaleki@creighton.edu</a> | (737) 600-9803 | <a href="https://www.linkedin.com/in/kian-maleki-96381772" target="_blank">LinkedIn</a></p>
+      <p>Say hello — <a href="mailto:kianmaleki@creighton.edu">kianmaleki@creighton.edu</a> | (737) 600-9803 | <a href="https://github.com/kianushmaleki" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/kian-maleki-phd/" target="_blank">LinkedIn</a></p>
       <small>© 2025 Kian Maleki</small>
     </footer>
+    <script src="scripts.js" defer></script>
   </body>
 </html>
