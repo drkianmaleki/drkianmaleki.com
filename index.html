@@ -14,7 +14,26 @@
     <!-- Header -->
     <header class="site-header">
       <div class="container header-inner">
-        <div class="brand">Kian Maleki</div>
+        <div class="brand-controls">
+          <label class="visually-hidden" for="header-variant-select">Header style</label>
+          <div class="header-choices" role="tablist" aria-label="Header style choices">
+            <button class="header-choice" data-variant="logo-only" type="button" role="tab" aria-selected="false">Logo</button>
+            <button class="header-choice" data-variant="logo-left" type="button" role="tab" aria-selected="false">Logo + Text</button>
+            <button class="header-choice" data-variant="bg-image" type="button" role="tab" aria-selected="false">Background</button>
+          </div>
+          <div class="brand-variants">
+            <div class="header-variant header-logo-only" data-variant="logo-only" aria-hidden="true">
+              <img src="header.png" alt="Kian Maleki logo" class="header-logo-img" />
+            </div>
+            <div class="header-variant header-logo-left" data-variant="logo-left" aria-hidden="true">
+              <img src="header.png" alt="Kian Maleki logo" class="header-logo-img" />
+              <span class="brand-text">Kian Maleki</span>
+            </div>
+            <div class="header-variant header-bg-image" data-variant="bg-image" aria-hidden="true">
+              <span class="brand-text">Kian Maleki</span>
+            </div>
+          </div>
+        </div>
         <nav class="nav">
           <a href="#home">Home</a>
           <a href="#about">About</a>

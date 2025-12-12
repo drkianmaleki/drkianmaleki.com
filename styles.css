@@ -10,6 +10,22 @@ body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvet
 .header-inner { display: flex; align-items: center; justify-content: space-between; }
 .brand { font-weight: 700; font-size: 1.1rem; color: #0f1724; }
 .brand { font-family: 'Poppins', Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; letter-spacing: 0.2px; }
+/* Header variant controls and styles */
+.header-controls { display: flex; align-items: center; gap: 0.75rem; }
+.header-choices { display: flex; gap: 0.5rem; }
+.header-choice { background: transparent; border: 1px solid transparent; padding: 0.35rem 0.6rem; border-radius: 6px; font-weight: 600; cursor: pointer; color: #334155; }
+.header-choice[aria-selected="true"], .header-choice:hover { background: rgba(6,182,212,0.08); border-color: rgba(6,182,212,0.12); color: #0f1724; }
+.brand-variants { display: flex; align-items: center; gap: 0.5rem; }
+.header-variant { display: none; align-items: center; gap: 0.5rem; }
+.header-variant.active { display: flex; }
+.header-logo-img { width: 42px; height: 42px; object-fit: cover; border-radius: 8px; }
+.brand-text { font-weight: 700; font-size: 1.05rem; color: #0f1724; }
+.header-bg-image { padding: 0.6rem 0.9rem; border-radius: 8px; color: #fff; }
+.header-bg-image::before { content: ''; display: block; position: absolute; inset: 0; z-index: -1; border-radius: 8px; }
+.site-header { position: sticky; top: 0; z-index: 20; background: #ffffff; }
+.site-header.bg-image { background-size: cover; background-position: center; color: #fff; }
+.site-header.bg-image .nav a { color: rgba(255,255,255,0.95); }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .nav a { margin-left: 1rem; text-decoration: none; color: #334155; font-weight: 600; }
 .nav a:hover { color: #0f1724; }
 
