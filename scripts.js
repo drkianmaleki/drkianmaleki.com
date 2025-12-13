@@ -57,4 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const target = tags.find(t => t.dataset.skill.toLowerCase() === skillParam.toLowerCase());
     if (target) target.click();
   }
+
+  // Header now uses a centered banner image with brand text below; no JS required.
 });
