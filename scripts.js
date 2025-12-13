@@ -58,34 +58,5 @@ document.addEventListener('DOMContentLoaded', function () {
     if (target) target.click();
   }
 
-  // Header variant preview and selection
-  const headerChoices = Array.from(document.querySelectorAll('.header-choice'));
-  const headerVariants = Array.from(document.querySelectorAll('.header-variant'));
-  const siteHeader = document.querySelector('.site-header');
-
-  function setHeaderVariant(name, persist = true) {
-    headerVariants.forEach(v => {
-      const match = v.dataset.variant === name;
-      v.classList.toggle('active', match);
-      v.setAttribute('aria-hidden', match ? 'false' : 'true');
-    });
-    headerChoices.forEach(c => c.setAttribute('aria-selected', c.dataset.variant === name ? 'true' : 'false'));
-    // apply bg-image as header background
-    if (name === 'bg-image') {
-      siteHeader.classList.add('bg-image');
-      siteHeader.style.backgroundImage = 'url("header.png")';
-    } else {
-      siteHeader.classList.remove('bg-image');
-      siteHeader.style.backgroundImage = '';
-    }
-    if (persist && window.localStorage) localStorage.setItem('headerVariant', name);
-  }
-
-  headerChoices.forEach(choice => {
-    choice.addEventListener('click', () => setHeaderVariant(choice.dataset.variant));
-  });
-
-  // initialize from localStorage or default to logo-left
-  const saved = (window.localStorage && localStorage.getItem('headerVariant')) || 'logo-left';
-  setHeaderVariant(saved, false);
+  // Header now uses a centered banner image with brand text below; no JS required.
 });
