@@ -1,3 +1,7 @@
+/* Utility class for right justification */
+.right-justify {
+  text-align: right;
+}
 /* Basic reset */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html,body { height: 100%; }
