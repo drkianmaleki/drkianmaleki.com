@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kian Maleki | Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .resume-container { max-width: 800px; margin: 3rem auto; background: var(--card-bg); padding: 2.5rem; border-radius: 18px; border: 1px solid var(--border); }
+        .resume-container h1 { font-size: 2.5rem; margin-bottom: 1.5rem; }
+        .resume-container h2 { font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.7rem; color: var(--accent-cyan); }
+        .resume-container ul { margin-bottom: 1.5rem; }
+        .resume-container li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <h1 style="margin-bottom:0.5rem;">Kian Maleki</h1>
+        <div style="font-size:1.05rem; margin-bottom:0.5rem;">
+            <a href="mailto:kianushmaleki@gmail.com">kianushmaleki@gmail.com</a> &nbsp;|&nbsp; (737) 600-9803
+        </div>
+        <div style="font-size:1.05rem; margin-bottom:1.2rem;">
+            <a href="https://www.linkedin.com/in/kian-maleki-phd/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/kianushmaleki" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <button onclick="window.print()" class="btn-print">Print Resume</button>
+
+        <script>
+            // Optional: Auto-trigger print if a URL parameter is present
+            if (window.location.search.includes('print=true')) {
+                window.print();
+            }
+        </script>
+        <h2>Summary</h2>
+        <p style="margin-bottom:1.5rem;">Data Scientist &amp; Ph.D. Physicist with a strong foundation in quantitative analysis and computational modeling. Leverages 5+ years of academic research experience to solve complex problems using Python, SQL, and advanced Machine Learning techniques. Proficient in translating large-scale, noisy datasets into actionable insights through rigorous statistical methods. Currently refining industry-standard engineering practices (CI/CD, Scikit-Learn, TensorFlow) to apply scientific rigor to real-world business challenges.</p>
+        <h2>Technical Skills</h2>
+        <div style="margin-bottom:1.5rem;">
+            <span style="display:block; line-height:1.7;">Python | SQL | Mathematica | LaTeX | Bash | Scikit-Learn | TensorFlow | Keras | PyTorch | Random Forest | XGBoost | NLP | Supervised Learning | Convolutional Neural Networks (CNNs) | Pandas | NumPy | SciPy | EDA | Monte Carlo Simulations | Bayesian Statistics | A/B Testing | Matplotlib | Seaborn | Plotly | Tableau | Power BI | Git | GitHub | Docker | AWS (S3/EC2) | VS Code | Jupyter Notebooks</span>
+        </div>
+        <h2>Experience</h2>
+        <div style="margin-bottom:2rem;">
+            <h3>Assistant Professor | Creighton University, Physics Department</h3>
+            <div style="font-size:1rem; color:var(--text-muted); margin-bottom:0.5rem;">Aug 2025 - present</div>
+            <ul>
+                <li>Integrated AI Large Language Models (ChatGPT, Gemini, etc.) into coursework to equip students with practical AI skills for modern scientific workflows.</li>
+                <li>Supervised and coordinated 6 teaching assistants, ensuring smooth course delivery and high-quality instruction.</li>
+                <li>Developed and implemented a comprehensive curriculum for a Physics of Natural Science course.</li>
+                <li>Designed and executed advanced experiments integrating real-world applications in natural sciences.</li>
+            </ul>
+        </div>
+        <div style="margin-bottom:2rem;">
+            <h3>Research Assistant | University of Iowa, Physics Department</h3>
+            <div style="font-size:1rem; color:var(--text-muted); margin-bottom:0.5rem;">Aug 2018 - Aug 2025</div>
+            <ul>
+                <li>Invented and prototyped novel devices to advance research in condensed matter physics.</li>
+                <li>Applied coding and computational tools (Mathematica, Python) to model complex physical systems.</li>
+                <li>Co-inventor of a patent for modular construction of 0D-state tunnel junction devices (application filed Dec 4, 2023).</li>
+            </ul>
+        </div>
+        <h2>Education</h2>
+        <ul>
+            <li><strong>AI &amp; Machine Learning</strong> | TripleTen <span style="float:right;font-weight:normal;">Feb 2026</span></li>
+            <li><strong>Physics PhD</strong> | University of Iowa <span style="float:right;font-weight:normal;">Aug 2025</span></li>
+            <li><strong>Physics Master’s</strong> | Creighton University <span style="float:right;font-weight:normal;">Aug 2017</span></li>
+        </ul>
+    </div>
+
+</body>
+</html>

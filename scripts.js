@@ -1,62 +1,34 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const tags = Array.from(document.querySelectorAll('.skill-tag'));
-  const projects = Array.from(document.querySelectorAll('.project-card'));
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Reveal Elements on Scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+            }
+        });
+    }, { threshold: 0.1 });
 
-  function clearActiveTags() {
-    tags.forEach(t => {
-      t.classList.remove('active');
-      t.setAttribute('aria-pressed', 'false');
-    });
-  }
-
-  function filterProjectsBySkill(skill) {
-    if (!skill) {
-      projects.forEach(p => p.removeAttribute('hidden'));
-      return;
-    }
-    projects.forEach(p => {
-      const skills = p.dataset.skills ? p.dataset.skills.split(',').map(s => s.trim().toLowerCase()) : [];
-      if (skills.includes(skill.toLowerCase())) {
-        p.removeAttribute('hidden');
-      } else {
-        p.setAttribute('hidden', '');
-      }
-    });
-  }
-
-  tags.forEach(tag => {
-    // click handler
-    tag.addEventListener('click', () => {
-      const isPressed = tag.getAttribute('aria-pressed') === 'true';
-      // toggle behavior: if already active, clear filter
-      if (isPressed) {
-        tag.classList.remove('active');
-        tag.setAttribute('aria-pressed', 'false');
-        filterProjectsBySkill(null);
-      } else {
-        clearActiveTags();
-        tag.classList.add('active');
-        tag.setAttribute('aria-pressed', 'true');
-        filterProjectsBySkill(tag.dataset.skill);
-      }
+    const items = document.querySelectorAll('.bridge-card, .skill-card, .project-card, .timeline-item');
+    items.forEach(item => {
+        item.style.opacity = "0";
+        item.style.transform = "translateY(20px)";
+        item.style.transition = "all 0.6s ease-out";
+        observer.observe(item);
     });
 
-    // keyboard accessibility: allow Enter/Space to activate
-    tag.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        tag.click();
-      }
+    // 2. Offset scroll for anchor links (sticky header fix)
+    const header = document.querySelector('.site-header');
+    const headerHeight = header ? header.offsetHeight : 0;
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href').slice(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+                e.preventDefault();
+                const y = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+        });
     });
-  });
-
-  // support deep linking: ?skill=Python
-  const params = new URLSearchParams(window.location.search);
-  const skillParam = params.get('skill');
-  if (skillParam) {
-    const target = tags.find(t => t.dataset.skill.toLowerCase() === skillParam.toLowerCase());
-    if (target) target.click();
-  }
-
-  // Header now uses a centered banner image with brand text below; no JS required.
 });
