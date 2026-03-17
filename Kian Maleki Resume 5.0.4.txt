@@ -1,0 +1,121 @@
+\documentclass[10pt, a4paper]{article}
+
+% --- UNIVERSAL PREAMBLE BLOCK ---
+\usepackage[a4paper, top=1cm, bottom=1cm, left=1.2cm, right=1.2cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english, bidi=basic, provide=*]{babel}
+
+\babelprovide[import, onchar=ids fonts]{english}
+
+% Noto Sans for a modern, high-tech look
+\babelfont{rm}{Noto Sans}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Custom Colors
+\definecolor{darkblue}{RGB}{0, 0, 100}
+
+% Section formatting - clean, consistent lines
+\titleformat{\section}{\large\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\begin{document}
+
+% --- CONTACT HEADER ---
+\begin{center}
+    {\Huge \textbf{Kian Maleki, PhD}} \\
+    \vspace{4pt}
+    \small  +1 (737) 600 9803 \quad | \quad \href{mailto:kianushmaleki@gmail.com}{kianushmaleki@gmail.com} \quad | \quad 
+    \href{https://linkedin.com/in/kian-maleki-phd}{linkedin.com/in/kian-maleki-phd} \quad | \quad \href{https://github.com/kianushmaleki}{github.com/kianushmaleki}
+\end{center}
+
+\vspace{-10pt}
+
+\section{Professional Summary}
+PhD Physicist and Quantitative Researcher with 10+ years of experience in computational modeling\textsuperscript{1}, HPC, and production-grade ML pipelines. Expert at translating complex mathematical theory into scalable, reliable software for data analysis and financial applications. Proven leader in collaborative research with a patented invention\textsuperscript{2}. Highly skilled in AI, machine learning, and RAG systems.
+
+\section{Technical Expertise}
+\begin{itemize}[leftmargin=0.15in, label=-, itemsep=0pt, parsep=2pt]
+    \item \textbf{Modeling:} Gen AI, Retrieval-Augmented Generation (RAG), HPC \& Parallel Processing (MPI/Multithreading), NLP, Monte Carlo Simulations, Bayesian Statistics, Stochastic Processes.
+    \item \textbf{Engineering:} Python (Expert), SQL, FastAPI, Pydantic, Docker, Linux/Bash, CI/CD (GitHub Actions, Jenkins), Git.
+    \item \textbf{Numeric Stack:} Pandas, NumPy, Polars, Numba, Scikit-Learn, Transformers, TensorFlow, PyTorch.
+    \item \textbf{DevOps:} Pytest, Pydantic, AWS (S3, EC2), System Health Monitoring, Jenkins Pipelines.
+\end{itemize}
+
+\section{Quantitative \& Technical Projects}
+
+\noindent \textbf{RAG-Powered Knowledge Assistant | Independent Project} \hfill \textbf{2026}
+\begin{itemize}[leftmargin=0.15in, label=-, noitemsep, topsep=-2pt]
+    \item \textit{Context-Aware Text Chunking:} Implemented sliding window logic with configurable overlap to preserve semantic context across document boundaries.
+    \item \textit{High-Performance QA Extraction:} Optimized real-time inference using PyTorch and logit-based confidence scoring across segmented document tensors.
+\end{itemize}
+
+\vspace{6pt}
+\noindent \textbf{Quantum mechanical modeling of rare-earth metals | University of Iowa} \hfill \textbf{2020 -- 2025}
+\begin{itemize}[leftmargin=0.15in, label=-, noitemsep, topsep=-2pt]
+    \item Engineered theoretical frameworks to calculate non-collinear dispersion in high-dimensional systems.
+    \item Produced professional plots and graphics to demonstrate results and developed methods, resulting in publications in peer-reviewed journals.
+\end{itemize}
+
+\vspace{6pt}
+\noindent \textbf{Noisy Tunneling Systems: Stochastic Modeling | Collaborative Project} \hfill \textbf{2021 -- 2024}
+\begin{itemize}[leftmargin=0.15in, label=-, noitemsep, topsep=-2pt]
+    \item \textbf{Lead Modeler:} Developed custom Monte Carlo simulations to extract signals from stochastic experimental data; resulted in a patented device and publication in \textit{Nano Letters}.
+    \item Built a modular MVP simulation tool for researchers, reducing simulation time from days to $<1$ hour.
+\end{itemize}
+
+\vspace{6pt}
+\noindent \textbf{Production-Ready Model Deployment (Financial Science API) | Triple Ten} \hfill \textbf{2025}
+\begin{itemize}[leftmargin=0.15in, label=-, noitemsep, topsep=-2pt]
+    \item Architected high-performance RESTful APIs using FastAPI for asynchronous data handling.
+    \item Integrated Pydantic for strict data validation and automated Jenkins/GitHub Actions CI/CD pipelines to ensure production reliability and seamless deployment.
+\end{itemize}
+
+\vspace{6pt}
+\noindent \textbf{Customer Attrition \& Propensity Modeling | Triple Ten} \hfill \textbf{2025}
+\begin{itemize}[leftmargin=0.15in, label=-, noitemsep, topsep=-2pt]
+    \item Designed predictive models to identify high-risk segments (AUC-ROC: 0.85); implemented advanced upsampling techniques to mitigate extreme class imbalance ($80/20$).
+\end{itemize}
+
+\vspace{6pt}
+\noindent \textbf{Parallelized Molecular Dynamics \& N-Body Simulation | Creighton University} \hfill \textbf{2016 -- 2018}
+\begin{itemize}[leftmargin=0.15in, label=-, noitemsep, topsep=-2pt]
+    \item Designed Python-based molecular dynamics code with a GUI, parallelized via multiprocessing to execute on the Open Science Grid (OSG).
+    \item Developed automatic test code to validate simulation physics and ensure consistent numerical stability.
+\end{itemize}
+
+\section{Professional Experience}
+
+\noindent \textbf{Creighton University} | Assistant Professor of Physics \hfill \textbf{2025 -- Pres.}
+\begin{itemize}[leftmargin=0.15in, label=-, noitemsep, topsep=2pt]
+    \item Instructing graduate and undergraduate courses and overseeing advanced laboratory sessions.
+\end{itemize}
+
+\noindent \textbf{University of Iowa} | Graduate Research Assistant \hfill \textbf{2018 -- 2025}
+\begin{itemize}[leftmargin=0.15in, label=-, noitemsep, topsep=2pt]
+    \item Executed data-driven research projects focused on quantum coherent interactions and HPC simulations.
+\end{itemize}
+
+\noindent \textbf{Creighton University} | Graduate Teaching Assistant \hfill \textbf{2015 -- 2018}
+\begin{itemize}[leftmargin=0.15in, label=-, noitemsep, topsep=2pt]
+    \item Facilitated physics laboratories and provided academic support for undergraduate students.
+\end{itemize}
+
+\section{Education}
+\noindent \textbf{Triple Ten} | AI \& Machine Learning Bootcamp \hfill \textbf{2026} \\
+\noindent \textbf{University of Iowa} | PhD in Physics (GPA: 4.03) \hfill \textbf{2025} \\
+\noindent \textbf{Creighton University} | MS in Physics (GPA: 4.00) \hfill \textbf{2017}
+
+\section{Selected Publications}
+\begin{enumerate}[leftmargin=0.15in, itemsep=0pt]
+    \item \textit{Maleki, K. et al.} ``Crystal fields, exchange and dipolar interactions...'' \textbf{Phys. Rev. B}, 2025.
+    \item \textit{Maleki, K. et al.} ``A General and Modular Approach to Solid-State Integration...'' \textbf{Nano Letters}, 2025.
+\end{enumerate}
+
+\end{document}
