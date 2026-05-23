@@ -1,38 +1,23 @@
-# Kian Maleki — Portfolio
+# Kian Maleki — Data Science, MLOps & AI Systems Portfolio
 
-This repository contains a minimal, responsive static portfolio website for Kian Maleki. The site is a single-page HTML/CSS project with a small JavaScript helper to power accessible skill-tag filtering and a projects demo.
+This repository contains a responsive static portfolio website for Kian Maleki. The portfolio is targeted toward data science, machine learning engineering, AI/agentic systems, MLOps, RAG, document intelligence, and quantitative modeling roles.
 
-What's included
-- `index.html` — the full site (hero, about, skills, CV, projects, contact/footer)
-- `styles.css` — styles and responsive layout
-- `scripts.js` — accessible skill-tag keyboard interactions and project filtering
-- `Portfolio_photo.jpg` — Hero portrait (replace with your preferred image)
+## What's included
 
-Branching
-- Active feature work is on the branch `feature/index-improvements`. Merge the branch into `main` when ready.
+- `index.html` — main portfolio page with targeted positioning, skills, project filters, selected projects, experience, and contact section.
+- `resume.html` — focused resume-style web page for data science, ML engineering, MLOps, and AI systems roles.
+- `cv.html` — broader academic CV page for completeness, including education, research, publications, teaching, workshops, awards, and service.
+- `styles.css` — responsive layout, portfolio design, cards, timeline, print styles, and mobile navigation.
+- `scripts.js` — accessible project filtering, mobile navigation, smooth scrolling, and reveal-on-scroll effects.
+- `Portfolio_photo.jpg` — hero portrait image.
 
-Run / Preview locally
-1. Open `index.html` directly in your browser (double-click). This works for most previews.
-2. For a local server (recommended for proper relative-path handling):
+## Run locally
+
+Open `index.html` directly in a browser, or run a local server from the repository root:
 
 ```powershell
-# from the repository root
 python -m http.server 8000
-# then open http://localhost:8000 in your browser
 ```
 
-Notes for maintainers
-- Skill tags are implemented as accessible `<button>` elements with `aria-pressed` state and keyboard support (Enter/Space). See `scripts.js` for the filter implementation.
-- Project cards use a `data-skills` attribute for filtering; ensure the skill names match the `data-skill` values on tags.
-- SVG placeholders are used for skill icons to avoid third-party licensing issues. Replace with licensed icons if desired.
+Then open `http://localhost:8000`.
 
-How to contribute
-- Fork the repository and open a pull request against `main` (or open a PR from the feature branch). Keep changes focused and include a short summary of edits.
-
-License
-- The repository does not include a license file. Add `LICENSE` if you want to permit reuse.
-
-Questions or updates
-- If you'd like me to: add multi-select filtering, ARIA live announcements for screen readers, or connect the projects list to the GitHub API, say which and I'll implement it.
-
--- Kian Maleki
