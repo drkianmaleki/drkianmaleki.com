@@ -3,123 +3,129 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Kian Maleki | Resume</title>
+    <meta name="description" content="Targeted resume page for Kian Maleki: machine learning, data science, MLOps, generative AI, and physics-informed modeling." />
+    <title>Kian Maleki | Targeted Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
-    <style>
-        .resume-container { max-width: 800px; margin: 3rem auto; background: var(--card-bg); padding: 2.5rem; border-radius: 18px; border: 1px solid var(--border); }
-        .resume-container h1 { font-size: 2.5rem; margin-bottom: 1.5rem; }
-        .resume-container h2 { font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.7rem; color: var(--accent-cyan); }
-        .resume-container ul { margin-bottom: 1.5rem; }
-        .resume-container li { margin-bottom: 0.5rem; }
-    </style>
 </head>
 <body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Kian Maleki home">KM</a>
+            <nav class="nav" aria-label="Primary navigation">
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#experience">Experience</a>
+                <a href="cv.html">Full CV</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="resume-container">
-        <h1 style="margin-bottom:0.5rem;">Kian Maleki, PhD</h1>
-        <div style="font-size:1.05rem; margin-bottom:0.5rem;">
-            <a href="mailto:kianushmaleki@gmail.com">kianushmaleki@gmail.com</a> &nbsp;|&nbsp; +1 (737) 600 9803
-        </div>
-        <div style="font-size:1.05rem; margin-bottom:1.2rem;">
-            <a href="https://www.linkedin.com/in/kian-maleki-phd/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/kianushmaleki" target="_blank" rel="noopener">GitHub</a>
-        </div>
-        <button onclick="window.print()" class="btn-print">Print Resume</button>
+    <main class="resume-shell">
+        <section class="resume-card">
+            <div class="resume-header">
+                <div>
+                    <span class="badge">Targeted Resume</span>
+                    <h1>Kian Maleki, PhD</h1>
+                    <p class="lead">Machine Learning Engineer · MLOps · Generative AI · Data Scientist</p>
+                    <div class="resume-links">
+                        <a href="mailto:kianushmaleki@gmail.com">kianushmaleki@gmail.com</a>
+                        <a href="tel:+17376009803">+1 (737) 600-9803</a>
+                        <a href="https://www.linkedin.com/in/kian-maleki-phd/" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://github.com/kianushmaleki" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+                <button onclick="window.print()" class="btn-print">Print / Save PDF</button>
+            </div>
 
-        <script>
-            // Optional: Auto-trigger print if a URL parameter is present
-            if (window.location.search.includes('print=true')) {
-                window.print();
-            }
-        </script>
-        <h2>Professional Summary</h2>
-        <p style="margin-bottom:1.5rem;">PhD Physicist and Quantitative Researcher with 10+ years of experience in computational modeling [1], HPC, and production-grade ML pipelines. Expert at translating complex mathematical theory into scalable, reliable software for data analysis and financial applications. Proven leader in collaborative research with a patented invention [2]. Highly skilled in AI, machine learning, and RAG systems.</p>
-        
-        <h2>Technical Expertise</h2>
-        <div style="margin-bottom:1.5rem;">
-            <ul style="list-style-type: none; padding-left: 0;">
-                <li><strong>Modeling:</strong> Gen AI, Retrieval-Augmented Generation (RAG), HPC & Parallel Processing (MPI/Multithreading), NLP, Monte Carlo Simulations, Bayesian Statistics, Stochastic Processes.</li>
-                <li><strong>Engineering:</strong> Python (Expert), SQL, FastAPI, Pydantic, Docker, Linux/Bash, CI/CD (GitHub Actions, Jenkins), Git.</li>
-                <li><strong>Numeric Stack:</strong> Pandas, NumPy, Polars, Numba, Scikit-Learn, Transformers, TensorFlow, PyTorch.</li>
-                <li><strong>DevOps:</strong> Pytest, Pydantic, AWS (S3, EC2), System Health Monitoring, Jenkins Pipelines.</li>
-            </ul>
-        </div>
+            <h2>Professional Summary</h2>
+            <p>Physics PhD and machine learning practitioner focused on data science, MLOps, generative AI, RAG, and document intelligence. Experienced in Python-based modeling, end-to-end ML workflows, FastAPI services, reproducible pipelines, experiment tracking, drift monitoring, and high-dimensional scientific computing.</p>
 
-        <h2>Quantitative & Technical Projects</h2>
-        <div style="margin-bottom:2rem;">
-            <h3>RAG-Powered Knowledge Assistant | Independent Project <span style="float:right;font-weight:normal;">2026</span></h3>
+            <h2>Technical Expertise</h2>
             <ul>
-                <li><em>Context-Aware Text Chunking:</em> Implemented sliding window logic with configurable overlap to preserve semantic context across document boundaries.</li>
-                <li><em>High-Performance QA Extraction:</em> Optimized real-time inference using PyTorch and logit-based confidence scoring across segmented document tensors.</li>
+                <li><strong>Modeling:</strong> GenAI/RAG, experiment tracking, data versioning, drift monitoring, HPC, Monte Carlo simulations, Bayesian statistics.</li>
+                <li><strong>Engineering:</strong> Python, SQL, FastAPI, Pydantic, Docker, Linux/Bash, Git, GitHub Actions, Jenkins.</li>
+                <li><strong>Numeric and ML Stack:</strong> Pandas, NumPy, Polars, Numba, Scikit-Learn, Transformers, TensorFlow, PyTorch.</li>
+                <li><strong>MLOps:</strong> DVC, MLflow, Evidently, pytest, model registry, automated testing, performance gates, AWS S3/EC2.</li>
             </ul>
-        </div>
-        <div style="margin-bottom:2rem;">
-            <h3>Quantum mechanical modeling of rare-earth metals | University of Iowa <span style="float:right;font-weight:normal;">2020 - 2025</span></h3>
-            <ul>
-                <li>Engineered theoretical frameworks to calculate non-collinear dispersion in high-dimensional systems.</li>
-                <li>Produced professional plots and graphics to demonstrate results and developed methods, resulting in publications in peer-reviewed journals.</li>
-            </ul>
-        </div>
-        <div style="margin-bottom:2rem;">
-            <h3>Noisy Tunneling Systems: Stochastic Modeling | Collaborative Project <span style="float:right;font-weight:normal;">2021 - 2024</span></h3>
-            <ul>
-                <li><strong>Lead Modeler:</strong> Developed custom Monte Carlo simulations to extract signals from stochastic experimental data; resulted in a patented device and publication in <em>Nano Letters</em>.</li>
-                <li>Built a modular MVP simulation tool for researchers, reducing simulation time from days to &lt;1 hour.</li>
-            </ul>
-        </div>
-        <div style="margin-bottom:2rem;">
-            <h3>Production-Ready Model Deployment (Financial Science API) | Triple Ten <span style="float:right;font-weight:normal;">2025</span></h3>
-            <ul>
-                <li>Architected high-performance RESTful APIs using FastAPI for asynchronous data handling.</li>
-                <li>Integrated Pydantic for strict data validation and automated Jenkins/GitHub Actions CI/CD pipelines to ensure production reliability and seamless deployment.</li>
-            </ul>
-        </div>
-        <div style="margin-bottom:2rem;">
-            <h3>Customer Attrition & Propensity Modeling | Triple Ten <span style="float:right;font-weight:normal;">2025</span></h3>
-            <ul>
-                <li>Designed predictive models to identify high-risk segments (AUC-ROC: 0.85); implemented advanced upsampling techniques to mitigate extreme class imbalance (80/20).</li>
-            </ul>
-        </div>
-        <div style="margin-bottom:2rem;">
-            <h3>Parallelized Molecular Dynamics & N-Body Simulation | Creighton University <span style="float:right;font-weight:normal;">2016 - 2018</span></h3>
-            <ul>
-                <li>Designed Python-based molecular dynamics code with a GUI, parallelized via multiprocessing to execute on the Open Science Grid (OSG).</li>
-                <li>Developed automatic test code to validate simulation physics and ensure consistent numerical stability.</li>
-            </ul>
-        </div>
 
-        <h2>Professional Experience</h2>
-        <div style="margin-bottom:2rem;">
-            <h3>Creighton University | Assistant Professor of Physics <span style="float:right;font-weight:normal;">2025 - Pres.</span></h3>
+            <h2>Technical Experience</h2>
+            <h3>TripleTen | AI & Machine Learning Program <span>2026</span></h3>
             <ul>
-                <li>Instructing graduate and undergraduate courses and overseeing advanced laboratory sessions.</li>
+                <li>Completed supervised and unsupervised learning projects using Scikit-Learn for real-world ML tasks.</li>
+                <li>Built deep learning systems for computer vision and NLP workflows.</li>
+                <li>Completed 15+ end-to-end ML projects covering preprocessing, training, evaluation, and deployment.</li>
             </ul>
-        </div>
-        <div style="margin-bottom:2rem;">
-            <h3>University of Iowa | Graduate Research Assistant <span style="float:right;font-weight:normal;">2018 - 2025</span></h3>
+
+            <h3>Extern / Pfizer Context | AI-Powered Document Intelligence Externship <span>2026</span></h3>
             <ul>
-                <li>Executed data-driven research projects focused on quantum coherent interactions and HPC simulations.</li>
+                <li>Built an AI-powered document intelligence pipeline for healthcare-document processing.</li>
+                <li>Developed retrieval-augmented workflows to improve accuracy and reduce hallucinations in document-based question answering.</li>
+                <li>Delivered a functional prototype demonstrating AI-driven automation for healthcare supply-chain operations.</li>
             </ul>
-        </div>
-        <div style="margin-bottom:2rem;">
-            <h3>Creighton University | Graduate Teaching Assistant <span style="float:right;font-weight:normal;">2015 - 2018</span></h3>
+
+            <h2>Data-Driven Projects</h2>
+            <h3>RAG-Powered Knowledge Assistant <span>2026</span></h3>
             <ul>
-                <li>Facilitated physics laboratories and provided academic support for undergraduate students.</li>
+                <li>Built a local RAG system for document question answering using Transformers and PyTorch.</li>
+                <li>Improved answer relevance with sliding-window chunking and overlap to preserve semantic continuity.</li>
+                <li>Containerized the application with Docker for reproducible local execution.</li>
             </ul>
-        </div>
 
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Triple Ten</strong> | AI &amp; Machine Learning Bootcamp <span style="float:right;font-weight:normal;">2026</span></li>
-            <li><strong>University of Iowa</strong> | PhD in Physics (GPA: 4.03) <span style="float:right;font-weight:normal;">2025</span></li>
-            <li><strong>Creighton University</strong> | MS in Physics (GPA: 4.00) <span style="float:right;font-weight:normal;">2017</span></li>
-        </ul>
+            <h3>Heart Disease Prediction: End-to-End MLOps Pipeline <span>2026</span></h3>
+            <ul>
+                <li>Built a reproducible ML pipeline using DVC, MLflow, model registry, pytest, GitHub Actions, and Evidently.</li>
+                <li>Enforced automated performance gates requiring accuracy above 0.80 before deployment.</li>
+                <li>Implemented data and concept drift monitoring to support proactive retraining decisions.</li>
+            </ul>
 
-        <h2>Selected Publications</h2>
-        <ol style="margin-bottom: 2rem;">
-            <li><em>Maleki, K. et al.</em> “Crystal fields, exchange and dipolar interactions...” <strong>Phys. Rev. B</strong>, 2025.</li>
-            <li><em>Maleki, K. et al.</em> “A General and Modular Approach to Solid-State Integration...” <strong>Nano Letters</strong>, 2025.</li>
-        </ol>
-    </div>
+            <h3>SDF Document Information Extraction | Pfizer Externship Project <span>2026</span></h3>
+            <ul>
+                <li>Extracted regulatory information from SDF documents using text parsing, regex, NLP, and Pandas.</li>
+                <li>Converted semi-structured document content into structured datasets for downstream processing.</li>
+            </ul>
 
+            <h3>House Price Prediction API Service <span>2025</span></h3>
+            <ul>
+                <li>Built a REST API for real-time house price prediction using FastAPI, Pydantic, Uvicorn, Scikit-Learn, and NumPy.</li>
+                <li>Implemented schema validation and interactive API documentation with Swagger and ReDoc.</li>
+            </ul>
+
+            <h2>Professional Experience</h2>
+            <h3>Creighton University | Assistant Professor of Physics <span>Aug 2025 – Present</span></h3>
+            <ul>
+                <li>Teach undergraduate physics courses and design applied lab curricula.</li>
+                <li>Develop interdisciplinary lab curriculum integrating AI tools and chatbots into scientific workflows.</li>
+                <li>Supervise and mentor 1–5 teaching assistants.</li>
+            </ul>
+
+            <h3>University of Iowa | Graduate Research Assistant <span>Aug 2018 – Aug 2025</span></h3>
+            <ul>
+                <li>Optimized large-scale numerical simulations, reducing computational runtime from days to under one hour.</li>
+                <li>Developed high-dimensional modeling frameworks for complex physical systems.</li>
+                <li>Analyzed noisy experimental data using statistical inference and optimization techniques.</li>
+            </ul>
+
+            <h3>Creighton University | Graduate Research Assistant <span>Aug 2015 – Aug 2018</span></h3>
+            <ul>
+                <li>Developed Python and Fortran simulations, including N-body and molecular dynamics models.</li>
+                <li>Engineered parallel computation pipelines using HPC resources.</li>
+            </ul>
+
+            <h2>Education</h2>
+            <ul>
+                <li><strong>University of Iowa</strong> — PhD in Physics, GPA 4.03</li>
+                <li><strong>Creighton University</strong> — MS in Physics, GPA 4.00</li>
+                <li><strong>TripleTen</strong> — AI & Machine Learning Program</li>
+            </ul>
+
+            <h2>Selected Publications</h2>
+            <ul>
+                <li>Maleki, K. et al. “Crystal fields, exchange and dipolar interactions...” <em>Physical Review B</em>, 2025.</li>
+                <li>Maleki, K. et al. “A General and Modular Approach to Solid-State Integration...” <em>Nano Letters</em>, 2025.</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
