@@ -1,23 +1,40 @@
-# Kian Maleki — Data Science, MLOps & AI Systems Portfolio
+# drkianmaleki.com
 
-This repository contains a responsive static portfolio website for Kian Maleki. The portfolio is targeted toward data science, machine learning engineering, AI/agentic systems, MLOps, RAG, document intelligence, and quantitative modeling roles.
+Updated static portfolio site for Kian Maleki.
 
-## What's included
+## Included updates
 
-- `index.html` — main portfolio page with targeted positioning, skills, project filters, selected projects, experience, and contact section.
-- `resume.html` — focused resume-style web page for data science, ML engineering, MLOps, and AI systems roles.
-- `cv.html` — broader academic CV page for completeness, including education, research, publications, teaching, workshops, awards, and service.
-- `styles.css` — responsive layout, portfolio design, cards, timeline, print styles, and mobile navigation.
-- `scripts.js` — accessible project filtering, mobile navigation, smooth scrolling, and reveal-on-scroll effects.
-- `Portfolio_photo.jpg` — hero portrait image.
+- Updated contact email to `kian@drkianmaleki.com`
+- Updated GitHub links to `github.com/drkianmaleki`
+- Added latest PDF documents:
+  - Data Scientist Resume
+  - Research Scientist Resume
+  - Academic CV
+- Updated portfolio project links to the professional GitHub account
+- Added document download section on the home page
+- Added dedicated resume and CV pages linked to the latest PDFs
 
-## Run locally
+## Files to replace or add
 
-Open `index.html` directly in a browser, or run a local server from the repository root:
+Copy all files in this ZIP into the local website repository:
 
-```powershell
-python -m http.server 8000
+```text
+Dropbox/Portfolio/drkianmaleki.com/
 ```
 
-Then open `http://localhost:8000`.
+Then run:
 
+```powershell
+git status
+git add .
+git commit -m "Update website with latest resumes and academic CV"
+git push
+```
+
+After deployment, verify:
+
+- https://drkianmaleki.com
+- https://www.drkianmaleki.com
+- /documents/Kian_Maleki_Resume_DataScientist_latest.pdf
+- /documents/Kian_Maleki_Resume_ResearchScientist_latest.pdf
+- /documents/Kian_Maleki_CV_Academic_latest.pdf

@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.proof-card, .skill-card, .project-card, .timeline-item, .contact-panel').forEach(item => {
+    document.querySelectorAll('.proof-card, .skill-card, .project-card, .timeline-item, .contact-panel, .document-card').forEach(item => {
         item.classList.add('reveal');
         observer.observe(item);
     });
