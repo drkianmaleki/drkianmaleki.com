@@ -1,331 +1,371 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="description" content="Kian Maleki portfolio: data science, machine learning, research science, MLOps, RAG, document intelligence, and physics-informed modeling." />
-    <title>Kian Maleki | Data Science, Research Science & AI Systems</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kian Maleki, PhD — Data Scientist & Research Scientist</title>
+  <meta name="description" content="Kian Maleki is a Physics PhD, data scientist, and research scientist working across machine learning, scientific computing, model evaluation, document intelligence, and applied AI." />
+  <meta name="author" content="Kian Maleki" />
+
+  <meta property="og:title" content="Kian Maleki, PhD — Data Scientist & Research Scientist" />
+  <meta property="og:description" content="Physics PhD working at the intersection of scientific computing, machine learning, document intelligence, and trustworthy model evaluation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://drkianmaleki.com/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;750;800;900&family=Monsieur+La+Doulaise&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <a class="brand" href="index.html" aria-label="Kian Maleki home">KM</a>
-            <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
-            <nav class="nav" aria-label="Primary navigation">
-                <a href="#about">About</a>
-                <a href="#documents">Documents</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="resume.html">Resume</a>
-                <a href="cv.html">CV</a>
-            </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Kian Maleki homepage">
+        <span class="brand-main">Kian Maleki</span>
+        <span class="brand-script" id="weekly-script-phrase">Beautiful equations, quiet machines</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#focus">Focus</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <header class="hero shell" id="top">
+      <div class="hero-copy-wrap">
+        <p class="label">Physics PhD · Data Scientist · Research Scientist</p>
+        <h1>Scientific computing meets applied AI.</h1>
+        <p class="hero-copy">
+          I build machine-learning and document-intelligence systems with a research scientist’s habit of asking:
+          <strong>What can fail, how do we know, and how do we measure it?</strong>
+          My work connects physics, high-dimensional modeling, reliable evaluation, and practical AI tools.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="documents/Kian_Maleki_Data_Scientist_Resume.pdf">Data Scientist Resume</a>
+          <a class="btn" href="documents/Kian_Maleki_Research_Scientist_Resume.pdf">Research Resume</a>
+          <a class="btn" href="documents/Kian_Maleki_Academic_CV.pdf">Academic CV</a>
         </div>
+
+        <div class="quick-links" aria-label="External profile links">
+          <a href="mailto:kian@drkianmaleki.com">kian@drkianmaleki.com</a>
+          <a href="https://github.com/drkianmaleki" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/kian-maleki-phd" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <aside class="portrait-card" aria-label="Profile summary">
+        <div class="portrait-box"><img src="assets/Portfolio_photo.jpg" alt="Portrait of Kian Maleki" /></div>
+        <div class="tiny-stats">
+          <div class="stat">
+            <strong>PhD</strong>
+            <span>Physics & scientific computing</span>
+          </div>
+          <div class="stat">
+            <strong>AI</strong>
+            <span>ML, RAG, model evaluation</span>
+          </div>
+        </div>
+        <p class="card-note">
+          Current direction: reliable machine learning, scientific AI, document intelligence, and ambiguity-aware model assessment.
+        </p>
+      </aside>
     </header>
 
-    <main id="top">
-        <section id="about" class="hero">
-            <div class="container hero-inner">
-                <div class="hero-content">
-                    <span class="badge">Physics PhD → Data Science, Research Science & AI Systems</span>
-                    <h1>Kian Maleki</h1>
-                    <p class="lead">I build reproducible machine learning systems, document-intelligence workflows, and quantitative models that turn complex data into reliable decisions.</p>
-                    <p class="sublead">My background combines physics-grade mathematical modeling, high-performance simulation, applied machine learning, classifier evaluation, RAG, document intelligence, and scientific computing.</p>
-                    <div class="hero-cta" aria-label="Primary links">
-                        <a href="#documents" class="btn-primary">Download Resume / CV</a>
-                        <a href="#projects" class="btn-secondary">View Projects</a>
-                        <a href="cv.html" class="btn-secondary">Academic CV Page</a>
-                    </div>
-                    <div class="contact-row" aria-label="Contact links">
-                        <a href="mailto:kian@drkianmaleki.com">kian@drkianmaleki.com</a>
-                        <a href="https://drkianmaleki.com" target="_blank" rel="noopener">drkianmaleki.com</a>
-                        <a href="https://www.linkedin.com/in/kian-maleki-phd/" target="_blank" rel="noopener">LinkedIn</a>
-                        <a href="https://github.com/drkianmaleki" target="_blank" rel="noopener">GitHub</a>
-                    </div>
-                </div>
-                <div class="hero-panel" aria-label="Professional focus">
-                    <div class="hero-card">
-                        <span class="metric">PhD</span>
-                        <h3>Physics + AI</h3>
-                        <p>Scientific computing, mathematical modeling, ML evaluation, and applied AI systems.</p>
-                    </div>
-                    <div class="hero-card">
-                        <span class="metric">2026</span>
-                        <h3>Current Focus</h3>
-                        <p>Document intelligence, ambiguity-aware classifier evaluation, RAG, and MLOps.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="section shell" id="focus">
+      <div class="section-head">
+        <p class="section-kicker">Focus</p>
+        <h2>Three areas, one thread: careful modeling.</h2>
+        <p>
+          My background moves from physics and numerical simulation into applied machine learning.
+          The connecting idea is the same: build models, test their limits, and explain when they should be trusted.
+        </p>
+      </div>
 
-        <section class="container proof-strip" aria-label="Career focus summary">
-            <article class="proof-card">
-                <span class="metric">15+</span>
-                <h3>ML Projects</h3>
-                <p>End-to-end modeling, deployment, evaluation, and reproducibility workflows.</p>
-            </article>
-            <article class="proof-card glow">
-                <span class="metric">2</span>
-                <h3>Peer-Reviewed Papers</h3>
-                <p>Published research in Physical Review B and Nano Letters.</p>
-            </article>
-            <article class="proof-card">
-                <span class="metric">Days → &lt;1 hr</span>
-                <h3>Runtime Reduction</h3>
-                <p>Optimized large-scale numerical simulations through algorithmic improvements.</p>
-            </article>
-        </section>
+      <div class="focus-grid">
+        <article class="card">
+          <div class="number">01</div>
+          <h3>Machine Learning & Model Evaluation</h3>
+          <p>
+            Classifier ambiguity, calibration, threshold-dependent behavior, finite-horizon learning-curve prediction,
+            conservative extrapolation, experiment tracking, and reproducible benchmarks.
+          </p>
+        </article>
 
-        <section id="documents" class="container section-padding">
-            <div class="section-heading">
-                <span class="eyebrow">Current documents</span>
-                <h2 class="section-title">Latest Resume and CV</h2>
-                <p>These files are the current professional versions using <strong>kian@drkianmaleki.com</strong>, <strong>drkianmaleki.com</strong>, and <strong>github.com/drkianmaleki</strong>.</p>
-            </div>
-            <div class="document-grid">
-                <article class="document-card featured">
-                    <h3>Data Scientist Resume</h3>
-                    <p>Targeted for data science, machine learning, MLOps, RAG, and document intelligence roles.</p>
-                    <a class="btn-primary" href="documents/Kian_Maleki_Resume_DataScientist_latest.pdf" target="_blank" rel="noopener">Download Data Scientist Resume</a>
-                </article>
-                <article class="document-card">
-                    <h3>Research Scientist Resume</h3>
-                    <p>Targeted for research scientist roles involving machine learning, scientific computing, model evaluation, and physics-informed modeling.</p>
-                    <a class="btn-primary" href="documents/Kian_Maleki_Resume_ResearchScientist_latest.pdf" target="_blank" rel="noopener">Download Research Scientist Resume</a>
-                </article>
-                <article class="document-card">
-                    <h3>Academic CV</h3>
-                    <p>Full academic CV with education, research experience, publications, teaching, workshops, awards, and service.</p>
-                    <a class="btn-primary" href="documents/Kian_Maleki_CV_Academic_latest.pdf" target="_blank" rel="noopener">Download Academic CV</a>
-                </article>
-            </div>
-        </section>
+        <article class="card">
+          <div class="number">02</div>
+          <h3>Document Intelligence & RAG</h3>
+          <p>
+            PDF parsing, structured extraction, native text-layer workflows, retrieval-augmented question answering,
+            hallucination reduction, and evaluation of extraction quality.
+          </p>
+        </article>
 
-        <section id="skills" class="container section-padding">
-            <div class="section-heading">
-                <span class="eyebrow">Technical profile</span>
-                <h2 class="section-title">Data Science, AI Systems & Research Computing</h2>
-                <p>Focused on roles in data science, research science, machine learning engineering, RAG, document intelligence, and model evaluation.</p>
-            </div>
-            <div class="skill-grid">
-                <article class="skill-card">
-                    <h3>Machine Learning & Evaluation</h3>
-                    <div class="tags">
-                        <span class="skill-tag">Scikit-Learn</span>
-                        <span class="skill-tag">XGBoost</span>
-                        <span class="skill-tag">Model Evaluation</span>
-                        <span class="skill-tag">Calibration</span>
-                        <span class="skill-tag">Statistical Testing</span>
-                        <span class="skill-tag">Bootstrap CIs</span>
-                    </div>
-                </article>
-                <article class="skill-card">
-                    <h3>Generative AI & Document Intelligence</h3>
-                    <div class="tags">
-                        <span class="skill-tag">RAG</span>
-                        <span class="skill-tag">Document QA</span>
-                        <span class="skill-tag">Transformers</span>
-                        <span class="skill-tag">NLP</span>
-                        <span class="skill-tag">OCR-Aware Workflows</span>
-                        <span class="skill-tag">PDF Parsing</span>
-                    </div>
-                </article>
-                <article class="skill-card">
-                    <h3>MLOps & Engineering</h3>
-                    <div class="tags">
-                        <span class="skill-tag">DVC</span>
-                        <span class="skill-tag">MLflow</span>
-                        <span class="skill-tag">Evidently</span>
-                        <span class="skill-tag">pytest</span>
-                        <span class="skill-tag">GitHub Actions</span>
-                        <span class="skill-tag">Docker</span>
-                    </div>
-                </article>
-                <article class="skill-card">
-                    <h3>Scientific Computing</h3>
-                    <div class="tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Fortran</span>
-                        <span class="skill-tag">HPC</span>
-                        <span class="skill-tag">Monte Carlo</span>
-                        <span class="skill-tag">Numerical Modeling</span>
-                        <span class="skill-tag">Optimization</span>
-                    </div>
-                </article>
-            </div>
-        </section>
+        <article class="card">
+          <div class="number">03</div>
+          <h3>Scientific Computing & Physics</h3>
+          <p>
+            Quantum materials, noncollinear magnons, molecular and defect-mediated transport, numerical simulation,
+            high-dimensional analysis, and high-performance computing.
+          </p>
+        </article>
+      </div>
+    </section>
 
-        <section id="projects" class="container section-padding">
-            <div class="section-heading">
-                <span class="eyebrow">Selected work</span>
-                <h2 class="section-title">Projects Matched to Data Science, AI & Research Roles</h2>
-                <p>All GitHub links now point to the professional <strong>drkianmaleki</strong> account.</p>
-            </div>
+    <section class="section shell" id="projects">
+      <div class="section-head">
+        <p class="section-kicker">Selected work</p>
+        <h2>Projects with a research spine.</h2>
+        <p>
+          These projects are designed to be more than portfolio demos. They test reliability, expose failure modes,
+          and connect mathematical ideas to usable AI systems.
+        </p>
+      </div>
 
-            <div class="filter-toolbar" role="group" aria-label="Filter projects by skill">
-                <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
-                <button class="filter-btn" type="button" data-filter="rag" aria-pressed="false">RAG / GenAI</button>
-                <button class="filter-btn" type="button" data-filter="mlops" aria-pressed="false">MLOps</button>
-                <button class="filter-btn" type="button" data-filter="document-ai" aria-pressed="false">Document AI</button>
-                <button class="filter-btn" type="button" data-filter="research" aria-pressed="false">Research</button>
-                <button class="filter-btn" type="button" data-filter="nlp" aria-pressed="false">NLP</button>
-            </div>
+      <div class="project-layout">
+        <aside class="sidebar-card">
+          <div>
+            <span class="tag light">Featured direction</span>
+            <h2>From equations to systems.</h2>
+          </div>
+          <p>
+            I am especially interested in the boundary between mathematically grounded research and practical AI:
+            systems that extract, predict, retrieve, evaluate, and explain.
+          </p>
+        </aside>
 
-            <div class="project-grid" id="project-grid">
-                <article class="project-card featured" data-category="research mlops">
-                    <div class="project-meta">2026 · ML Research</div>
-                    <h3>Ambiguity Range Framework</h3>
-                    <p>Model-agnostic diagnostic framework for evaluating binary classifiers beyond global metrics such as AUC-ROC.</p>
-                    <ul class="impact-list">
-                        <li>Introduced ambiguity-focused metrics for decision-boundary behavior.</li>
-                        <li>Built reproducible experiments with calibration, bootstrap confidence intervals, and paired statistical tests.</li>
-                        <li>Developed a tested Python package for classifier evaluation research.</li>
-                    </ul>
-                    <div class="project-footer">
-                        <span class="tech-stack">Python · Scikit-Learn · XGBoost · PyTest · Statistical Testing</span>
-                        <a href="https://github.com/drkianmaleki/ambiguity-framework" target="_blank" rel="noopener">Repository</a>
-                    </div>
-                </article>
-
-                <article class="project-card featured" data-category="document-ai rag">
-                    <div class="project-meta">2026 · Pfizer Externship Project</div>
-                    <h3>PDF Document Intelligence Extractor</h3>
-                    <p>Document intelligence pipeline for extracting structured regulatory information from PDFs using native text-layer parsing.</p>
-                    <ul class="impact-list">
-                        <li>Used Python, regex, NLP, and Pandas to identify and normalize key fields.</li>
-                        <li>Converted semi-structured document content into analysis-ready datasets.</li>
-                        <li>Connects to broader advanced OCR workflows for scanned and image-heavy documents.</li>
-                    </ul>
-                    <div class="project-footer">
-                        <span class="tech-stack">Python · NLP · Regex · Pandas · PDF Text Extraction · RAG</span>
-                        <a href="https://github.com/drkianmaleki/PDF-Document-Intelligence-Extractor" target="_blank" rel="noopener">Repository</a>
-                    </div>
-                </article>
-
-                <article class="project-card" data-category="rag document-ai">
-                    <div class="project-meta">2026 · Independent Project</div>
-                    <h3>RAG-Powered Knowledge Assistant</h3>
-                    <p>Local retrieval-augmented document question-answering system with chunking strategies designed to preserve semantic continuity.</p>
-                    <ul class="impact-list">
-                        <li>Built context-aware retrieval and answer-generation workflows.</li>
-                        <li>Reduced unsupported responses through document-grounded retrieval.</li>
-                        <li>Containerized the application with Docker for reproducible local execution.</li>
-                    </ul>
-                    <div class="project-footer">
-                        <span class="tech-stack">Python · PyTorch · Transformers · NLP · Docker</span>
-                        <a href="https://github.com/drkianmaleki/RAG-Powered-Knowledge-Assistant" target="_blank" rel="noopener">Repository</a>
-                    </div>
-                </article>
-
-                <article class="project-card" data-category="mlops">
-                    <div class="project-meta">2026 · MLOps Project</div>
-                    <h3>Heart Disease Prediction: End-to-End MLOps Pipeline</h3>
-                    <p>Reproducible ML pipeline for heart disease prediction with data versioning, experiment tracking, model registry, CI/CD, and drift monitoring.</p>
-                    <ul class="impact-list">
-                        <li>Tracked data and model artifacts with DVC and MLflow.</li>
-                        <li>Enforced CI checks with pytest and model-performance thresholds.</li>
-                        <li>Added Evidently-based monitoring for drift and retraining triggers.</li>
-                    </ul>
-                    <div class="project-footer">
-                        <span class="tech-stack">DVC · MLflow · pytest · GitHub Actions · Evidently</span>
-                        <a href="https://github.com/drkianmaleki/Heart-Disease-Prediction" target="_blank" rel="noopener">Repository</a>
-                    </div>
-                </article>
-
-                <article class="project-card" data-category="nlp">
-                    <div class="project-meta">2026 · NLP Project</div>
-                    <h3>AG News Classifier</h3>
-                    <p>End-to-end news topic classification project using TF-IDF features, scikit-learn models, MLflow tracking, tests, Docker support, and an optional LLM explanation layer.</p>
-                    <ul class="impact-list">
-                        <li>Compared multiple baseline text-classification models.</li>
-                        <li>Logged experiments and metrics with MLflow.</li>
-                        <li>Separated the classifier from the optional LLM interface for reproducibility.</li>
-                    </ul>
-                    <div class="project-footer">
-                        <span class="tech-stack">Python · scikit-learn · MLflow · pytest · Docker · NLP</span>
-                        <a href="https://github.com/drkianmaleki/AG-News-Classifier" target="_blank" rel="noopener">Repository</a>
-                    </div>
-                </article>
-
-                <article class="project-card" data-category="research">
-                    <div class="project-meta">2020–2025 · University of Iowa</div>
-                    <h3>Quantum Mechanical Modeling of Rare-Earth Materials</h3>
-                    <p>Theoretical and computational frameworks for crystal fields, exchange and dipolar interactions, and noncollinear magnon dispersion in erbium oxide.</p>
-                    <ul class="impact-list">
-                        <li>Applied high-dimensional modeling to complex quantum materials.</li>
-                        <li>Published results in Physical Review B.</li>
-                        <li>Built publication-quality visualizations for theoretical results.</li>
-                    </ul>
-                    <div class="project-footer">
-                        <span class="tech-stack">Python · Numerical Modeling · Statistical Physics</span>
-                        <a href="https://doi.org/10.1103/v6n3-srt5" target="_blank" rel="noopener">Publication</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="experience" class="container section-padding">
-            <div class="section-heading">
-                <span class="eyebrow">Experience</span>
-                <h2 class="section-title">Technical Background</h2>
-            </div>
-            <div class="timeline">
-                <article class="timeline-item">
-                    <div class="time-header">
-                        <h3>Assistant Professor of Physics</h3>
-                        <span>Aug 2025 – Present</span>
-                    </div>
-                    <p class="loc">Creighton University</p>
-                    <ul>
-                        <li>Teach undergraduate physics courses and mentor teaching assistants.</li>
-                        <li>Develop interdisciplinary lab curriculum integrating ethical AI tools and chatbot-supported scientific workflows.</li>
-                    </ul>
-                </article>
-                <article class="timeline-item">
-                    <div class="time-header">
-                        <h3>AI-Powered Document Intelligence Extern</h3>
-                        <span>2026</span>
-                    </div>
-                    <p class="loc">Extern · Pfizer project context</p>
-                    <ul>
-                        <li>Built functional document intelligence prototypes for healthcare document processing.</li>
-                        <li>Developed retrieval-augmented workflows to improve document-based question answering.</li>
-                    </ul>
-                </article>
-                <article class="timeline-item">
-                    <div class="time-header">
-                        <h3>Graduate Research Assistant</h3>
-                        <span>Aug 2018 – Aug 2025</span>
-                    </div>
-                    <p class="loc">University of Iowa</p>
-                    <ul>
-                        <li>Developed high-dimensional modeling frameworks for quantum and spin systems.</li>
-                        <li>Optimized large-scale numerical simulations and extracted signal from noisy experimental data.</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <section class="container section-padding contact-panel" aria-label="Contact">
+        <div class="project-stack">
+          <article class="project-row">
+            <span class="tag">Model Evaluation</span>
             <div>
-                <span class="eyebrow">Open to targeted roles</span>
-                <h2>Data Scientist · Research Scientist · ML / AI Systems</h2>
-                <p>I am especially interested in roles involving RAG, document intelligence, model evaluation, MLOps, applied prediction systems, and physics-informed quantitative modeling.</p>
+              <h3>Ambiguity Range Framework</h3>
+              <p>
+                A diagnostic toolkit for evaluating binary classifiers beyond a single threshold, with ambiguity-focused
+                metrics, calibration analysis, confidence intervals, and statistical testing.
+              </p>
+              <a href="https://github.com/drkianmaleki/ambiguity-framework" target="_blank" rel="noopener">View project</a>
             </div>
-            <div class="hero-cta">
-                <a class="btn-primary" href="mailto:kian@drkianmaleki.com">Contact Me</a>
-                <a class="btn-secondary" href="#documents">Download Resume / CV</a>
-            </div>
-        </section>
-    </main>
+          </article>
 
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <p>© 2026 Kian Maleki</p>
-            <p>Data Science · Research Science · RAG · Document Intelligence · Quantitative Modeling</p>
+          <article class="project-row">
+            <span class="tag">Learning Curves</span>
+            <div>
+              <h3>Sequence Acceleration Benchmark</h3>
+              <p>
+                A reproducible benchmark for finite-horizon gradient-boosting learning-curve prediction across many
+                convergence regimes, noise levels, and extrapolation methods.
+              </p>
+              <a href="https://github.com/drkianmaleki/sequence-acceleration-benchmark" target="_blank" rel="noopener">View project</a>
+            </div>
+          </article>
+
+          <article class="project-row">
+            <span class="tag">Document AI</span>
+            <div>
+              <h3>PharmaDoc-AI</h3>
+              <p>
+                A pharmaceutical document-intelligence and RAG project that combines PDF extraction,
+                structured information retrieval, document question answering, and evaluation workflows.
+              </p>
+              <a href="https://github.com/drkianmaleki/PharmaDoc-AI" target="_blank" rel="noopener">View project</a>
+            </div>
+          </article>
+
+          <article class="project-row">
+            <span class="tag">MLOps</span>
+            <div>
+              <h3>Heart Disease Prediction Pipeline</h3>
+              <p>
+                An end-to-end MLOps pipeline with DVC, MLflow, pytest, GitHub Actions, model-performance checks,
+                and drift monitoring with Evidently.
+              </p>
+              <a href="https://github.com/drkianmaleki/Heart-Disease-Prediction" target="_blank" rel="noopener">View project</a>
+            </div>
+          </article>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="scripts.js"></script>
+    <section class="section shell" id="research">
+      <div class="section-head">
+        <p class="section-kicker">Research</p>
+        <h2>Physics roots, machine-learning branches.</h2>
+        <p>
+          My research background spans quantum materials, crystal-field theory, noncollinear magnons,
+          molecular and defect-mediated transport, dark matter phenomenology, and modern ML diagnostics.
+        </p>
+      </div>
+
+      <div class="research-grid">
+        <article class="research-card">
+          <h3>Publications</h3>
+          <ul>
+            <li>
+              <strong>Under review</strong> —
+              Finite-Horizon Learning-Curve Prediction for Gradient Boosting: Regime Dependence,
+              Failure Detection, and Conservative Extrapolation Rules.
+            </li>
+            <li>
+              <strong>Under review</strong> —
+              The Ambiguity Range Framework: A Diagnostic Toolkit for Operational Evaluation of Binary Classifiers.
+            </li>
+            <li>
+              <strong>Nano Letters, 2025</strong> —
+              A modular approach to solid-state integration of zero-dimensional quantum systems.
+            </li>
+            <li>
+              <strong>Physical Review B, 2025</strong> —
+              Crystal fields, exchange and dipolar interactions, and noncollinear magnons of erbium oxide.
+            </li>
+          </ul>
+        </article>
+
+        <article class="research-card">
+          <h3>Research interests</h3>
+          <div class="chip-cloud">
+            <span>Scientific ML</span>
+            <span>Classifier ambiguity</span>
+            <span>Learning curves</span>
+            <span>Calibration</span>
+            <span>Document intelligence</span>
+            <span>RAG</span>
+            <span>High-dimensional modeling</span>
+            <span>HPC</span>
+            <span>Numerical simulation</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" id="experience">
+      <div class="section-head">
+        <p class="section-kicker">Experience</p>
+        <h2>A bridge from research to applied AI.</h2>
+        <p>
+          My path combines academic research, teaching, scientific software, and project-based machine-learning training.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <strong>2025 — 2026</strong>
+          <div>
+            <h3>Assistant Professor of Physics · Creighton University</h3>
+            <p>
+              Teach undergraduate physics, develop optics and electronics lab materials, supervise teaching assistants,
+              and integrate AI tools into scientific workflows.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <strong>2026</strong>
+          <div>
+            <h3>AI & Machine Learning Training · TripleTen</h3>
+            <p>
+              Completed project-based training across supervised learning, unsupervised learning, deep learning,
+              NLP, computer vision, SQL, Git, and end-to-end ML workflows.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <strong>2026</strong>
+          <div>
+            <h3>AI-Powered Document Intelligence Externship · Pfizer / Extern</h3>
+            <p>
+              Built retrieval-augmented and document-intelligence workflows for healthcare documents using native
+              PDF extraction, LLMs, and RAG architectures.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <strong>2018 — 2025</strong>
+          <div>
+            <h3>Graduate Research Assistant · University of Iowa</h3>
+            <p>
+              Developed high-dimensional numerical models, optimized scientific simulations, analyzed noisy data,
+              and contributed to peer-reviewed work in condensed matter physics and quantum materials.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <strong>2015 — 2018</strong>
+          <div>
+            <h3>Graduate Research Assistant · Creighton University</h3>
+            <p>
+              Built simulation-based models using Python and Fortran, including N-body simulation,
+              molecular dynamics, and parallelized scientific computing workflows.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" id="skills">
+      <div class="section-head">
+        <p class="section-kicker">Tools</p>
+        <h2>Technical stack.</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h3>Machine Learning</h3>
+          <p>Scikit-Learn, XGBoost, PyTorch, TensorFlow, Transformers, calibration, model evaluation, NLP, RAG, MLflow.</p>
+        </div>
+        <div class="skill-box">
+          <h3>Engineering</h3>
+          <p>Python, SQL, FastAPI, Pydantic, Docker, Linux/Bash, Git, GitHub Actions, Jenkins, CI/CD, pytest.</p>
+        </div>
+        <div class="skill-box">
+          <h3>Scientific Computing</h3>
+          <p>NumPy, Pandas, Polars, Numba, Fortran, HPC, MPI, numerical optimization, Monte Carlo simulation.</p>
+        </div>
+        <div class="skill-box">
+          <h3>Document Intelligence</h3>
+          <p>PDF parsing, information extraction, OCR-aware workflows, structured extraction, evaluation of extraction quality.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="contact">
+      <div class="contact-panel">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Let’s connect.</h2>
+          <p>
+            I am interested in data science, machine learning, scientific AI, research scientist roles,
+            document intelligence, and projects where careful modeling matters.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:kian@drkianmaleki.com">Email me</a>
+          <a class="btn" href="https://github.com/drkianmaleki" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://linkedin.com/in/kian-maleki-phd" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <p>© <span id="year"></span> Kian Maleki · Beautiful equations, quiet machines.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>

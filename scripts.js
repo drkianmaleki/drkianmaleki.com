@@ -1,64 +1,49 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('.site-header');
-    const headerHeight = header ? header.offsetHeight : 0;
+const weeklyPhrases = [
+  "Beautiful equations, quiet machines",
+  "The poetry of computation",
+  "Machines dreaming in equations",
+  "The geometry of intelligence",
+  "Equations with a pulse",
+  "The long conversation between code and math",
+  "Where uncertainty becomes structure",
+  "A quiet life of difficult questions",
+  "The beautiful trouble of hard problems",
+  "Thinking slowly with fast machines",
+  "Between chalk dust and silicon"
+];
 
-    const navToggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.nav');
-    if (navToggle && nav) {
-        navToggle.addEventListener('click', () => {
-            const isOpen = nav.classList.toggle('open');
-            navToggle.setAttribute('aria-expanded', String(isOpen));
-        });
-    }
+function getWeekNumber(date) {
+  const startOfYear = new Date(date.getFullYear(), 0, 1);
+  const days = Math.floor((date - startOfYear) / 86400000);
+  return Math.floor((days + startOfYear.getDay()) / 7);
+}
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
+const phraseElement = document.getElementById("weekly-script-phrase");
+if (phraseElement) {
+  const currentWeek = getWeekNumber(new Date());
+  const phraseIndex = currentWeek % weeklyPhrases.length;
+  phraseElement.textContent = weeklyPhrases[phraseIndex];
+  phraseElement.title = "This phrase changes automatically once a week.";
+}
 
-    document.querySelectorAll('.proof-card, .skill-card, .project-card, .timeline-item, .contact-panel, .document-card').forEach(item => {
-        item.classList.add('reveal');
-        observer.observe(item);
+const yearElement = document.getElementById("year");
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
     });
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href').slice(1);
-            const target = document.getElementById(targetId);
-            if (target) {
-                e.preventDefault();
-                const y = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 12;
-                window.scrollTo({ top: y, behavior: 'smooth' });
-                if (nav && nav.classList.contains('open')) {
-                    nav.classList.remove('open');
-                    navToggle?.setAttribute('aria-expanded', 'false');
-                }
-            }
-        });
-    });
-
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filter = button.dataset.filter;
-            filterButtons.forEach(btn => {
-                btn.classList.remove('active');
-                btn.setAttribute('aria-pressed', 'false');
-            });
-            button.classList.add('active');
-            button.setAttribute('aria-pressed', 'true');
-
-            projectCards.forEach(card => {
-                const categories = card.dataset.category || '';
-                const shouldShow = filter === 'all' || categories.split(' ').includes(filter);
-                card.hidden = !shouldShow;
-            });
-        });
-    });
-});
+  });
+}
