@@ -95,22 +95,6 @@ a:hover {
   gap: 22px;
 }
 
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.72rem;
-  color: var(--ink);
-  text-decoration: none;
-  min-width: 0;
-}
-
-.brand-main {
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  font-size: 1.1rem;
-  white-space: nowrap;
-}
-
 .brand-script {
   font-family: var(--font-cursive);
   color: rgba(184, 121, 84, 0.88);
@@ -646,22 +630,6 @@ h3 {
     transform: rotate(-2deg) translateY(1px);
   }
 
-  .brand-main {
-    font-size: 1rem;
-  }
-
-  .brand-script {
-  font-family: var(--font-cursive);
-  color: rgba(184, 121, 84, 0.88);
-  font-size: 1.65rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  white-space: nowrap;
-  transform: rotate(-2deg) translateY(2px);
-  line-height: 1;
-  transition: opacity 0.35s ease;
-}
-
   .contact-panel {
     display: block;
   }
@@ -700,7 +668,7 @@ h3 {
   }
 }
 
-/* Python-generated production logo image */
+/* Nav brand: logo image and name */
 .brand,
 .site-brand {
   display: inline-flex;
@@ -726,4 +694,3 @@ h3 {
   font-size: 1.1rem;
   white-space: nowrap;
 }
-

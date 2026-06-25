@@ -1,3 +1,6 @@
+// scripts.js
+// Handles: weekly rotating phrase in the nav brand, footer year, mobile menu toggle.
+
 const weeklyPhrases = [
   "Beautiful equations, quiet machines",
   "The poetry of computation",
@@ -12,6 +15,7 @@ const weeklyPhrases = [
   "Between chalk dust and silicon"
 ];
 
+// Returns the ISO-style week number within the current year (0-indexed).
 function getWeekNumber(date) {
   const startOfYear = new Date(date.getFullYear(), 0, 1);
   const days = Math.floor((date - startOfYear) / 86400000);

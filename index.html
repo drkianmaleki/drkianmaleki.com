@@ -12,18 +12,17 @@
   <meta property="og:description" content="Physics PhD working at the intersection of scientific computing, machine learning, document intelligence, and trustworthy model evaluation." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://drkianmaleki.com/" />
+  <meta property="og:image" content="https://drkianmaleki.com/assets/kian-logo-production.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;750;800;900&family=Monsieur+La+Doulaise&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:wght@400;500;650;750;800;900&family=Monsieur+La+Doulaise&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,750&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-
-
 </head>
 
 <body>
@@ -31,7 +30,11 @@
 
   <nav class="nav" aria-label="Main navigation">
     <div class="nav-inner">
-      <a class="brand" href="#top" aria-label="Kian Maleki homepage"><img class="site-logo-img" src="assets/kian-logo-production.png" alt="Kian Maleki logo"><span class="brand-text">Kian Maleki</span><span class="brand-script" id="weeklyPhrase" aria-hidden="true">Beautiful equations, quiet machines</span></a>
+      <a class="brand" href="#top" aria-label="Kian Maleki homepage">
+        <img class="site-logo-img" src="assets/kian-logo-production.png" alt="Kian Maleki logo">
+        <span class="brand-text">Kian Maleki</span>
+        <span class="brand-script" id="weekly-script-phrase" aria-hidden="true">Beautiful equations, quiet machines</span>
+      </a>
 
       <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -42,6 +45,7 @@
         <a href="#projects">Projects</a>
         <a href="#research">Research</a>
         <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -53,7 +57,7 @@
         <p class="label">Physics PhD · Data Scientist · Research Scientist</p>
         <h1>Scientific computing meets applied AI.</h1>
         <p class="hero-copy">
-          I build machine-learning and document-intelligence systems with a research scientist’s habit of asking:
+          I build machine-learning and document-intelligence systems with a research scientist's habit of asking:
           <strong>What can fail, how do we know, and how do we measure it?</strong>
           My work connects physics, high-dimensional modeling, reliable evaluation, and practical AI tools.
         </p>
@@ -351,7 +355,7 @@
       <div class="contact-panel">
         <div>
           <p class="section-kicker">Contact</p>
-          <h2>Let’s connect.</h2>
+          <h2>Let's connect.</h2>
           <p>
             I am interested in data science, machine learning, scientific AI, research scientist roles,
             document intelligence, and projects where careful modeling matters.
@@ -369,30 +373,6 @@
   <footer class="footer shell">
     <p>© <span id="year"></span> Kian Maleki · Beautiful equations, quiet machines.</p>
   </footer>
-
-  <script>
-    const weeklyPhrases = [
-      "Beautiful equations, quiet machines",
-      "The poetry of computation",
-      "Machines dreaming in equations",
-      "The geometry of intelligence",
-      "Equations with a pulse",
-      "The long conversation between code and math",
-      "Where uncertainty becomes structure",
-      "A quiet life of difficult questions",
-      "The beautiful trouble of hard problems",
-      "Thinking slowly with fast machines",
-      "Between chalk dust and silicon"
-    ];
-
-    const weeklyPhraseElement = document.getElementById("weeklyPhrase");
-
-    if (weeklyPhraseElement) {
-      const millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
-      const weekNumber = Math.floor(Date.now() / millisecondsPerWeek);
-      weeklyPhraseElement.textContent = weeklyPhrases[weekNumber % weeklyPhrases.length];
-    }
-  </script>
 
   <script src="scripts.js"></script>
 </body>
