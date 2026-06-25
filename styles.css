@@ -676,7 +676,7 @@ h3 {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 900px) {
 
   .brand-script {
     display: none;
@@ -712,10 +712,10 @@ h3 {
 }
 
 .site-logo-img {
-  width: 46px;
-  height: 46px;
+  width: 30px;
+  height: 30px;
   display: block;
-  flex: 0 0 46px;
+  flex: 0 0 30px;
 }
 
 .brand-text {
