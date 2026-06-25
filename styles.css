@@ -96,11 +96,12 @@ a:hover {
 }
 
 .brand {
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.72rem;
   color: var(--ink);
   text-decoration: none;
+  min-width: 0;
 }
 
 .brand-main {
@@ -112,12 +113,12 @@ a:hover {
 
 .brand-script {
   font-family: var(--font-cursive);
-  color: rgba(139, 104, 74, 0.82);
-  font-size: 1.7rem;
+  color: rgba(184, 121, 84, 0.88);
+  font-size: 1.65rem;
   font-weight: 400;
   letter-spacing: 0.01em;
   white-space: nowrap;
-  transform: rotate(-2deg);
+  transform: rotate(-2deg) translateY(2px);
   line-height: 1;
   transition: opacity 0.35s ease;
 }
@@ -627,16 +628,39 @@ h3 {
     min-width: 0;
   }
 
+  .site-logo-img {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+  }
+
+  .brand-text {
+    font-size: 1rem;
+  }
+
+  .brand-script {
+    font-size: 1.2rem;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform: rotate(-2deg) translateY(1px);
+  }
+
   .brand-main {
     font-size: 1rem;
   }
 
   .brand-script {
-    font-size: 1.28rem;
-    max-width: 150px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  font-family: var(--font-cursive);
+  color: rgba(184, 121, 84, 0.88);
+  font-size: 1.65rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  transform: rotate(-2deg) translateY(2px);
+  line-height: 1;
+  transition: opacity 0.35s ease;
+}
 
   .contact-panel {
     display: block;
@@ -653,6 +677,11 @@ h3 {
 }
 
 @media (max-width: 560px) {
+
+  .brand-script {
+    display: none;
+  }
+
   .hero-actions,
   .contact-actions {
     display: grid;
@@ -670,3 +699,31 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Python-generated production logo image */
+.brand,
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.72rem;
+  color: var(--ink);
+  text-decoration: none;
+  min-width: 0;
+}
+
+.site-logo-img {
+  width: 46px;
+  height: 46px;
+  display: block;
+  flex: 0 0 46px;
+}
+
+.brand-text {
+  display: inline-block;
+  color: var(--ink);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
