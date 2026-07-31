@@ -22,3 +22,6 @@ env/
 # OS artifacts
 .DS_Store
 Thumbs.db
+
+# Claude Code instructions — local only
+CLAUDE.md
