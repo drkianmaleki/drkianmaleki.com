@@ -375,7 +375,7 @@ h3 {
 
 .project-layout {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 1fr;
   gap: 18px;
 }
 
@@ -383,20 +383,26 @@ h3 {
   background: var(--ink);
   color: white;
   border-radius: var(--radius-lg);
-  padding: 28px;
-  min-height: 420px;
+  padding: 24px 28px;
+  min-height: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
+  gap: 18px 36px;
 }
 
 .sidebar-card h2 {
   color: white;
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
 }
 
 .sidebar-card p {
   color: rgba(255,255,255,0.74);
   line-height: 1.7;
+  margin: 0;
+  max-width: 640px;
 }
 
 .project-stack {
