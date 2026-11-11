@@ -1,0 +1,7 @@
+{
+  "name": "drkianmaleki-site-tools",
+  "private": true,
+  "description": "Regenerates the inline equation and figure SVGs in ../index.html",
+  "scripts": { "build": "node build.js" },
+  "dependencies": { "mathjax": "3.2.2" }
+}

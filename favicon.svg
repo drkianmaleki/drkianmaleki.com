@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    path { fill: #121826; }                                   /* light tab bars: Midnight dark */
+    @media (prefers-color-scheme: dark) { path { fill: #2b4db0; } }  /* dark tab bars: ultramarine */
+  </style>
+  <path fill-rule="evenodd" d="M256.00 81.00 L407.55 168.50 L407.55 343.50 L256.00 431.00 L104.45 343.50 L104.45 168.50 Z M256.00 152.00 L346.07 204.00 L346.07 308.00 L256.00 360.00 L165.93 308.00 L165.93 204.00 Z"/>
+</svg>
